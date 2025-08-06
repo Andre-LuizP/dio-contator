@@ -11,11 +11,10 @@ public class Contador {
 		
 		try {
 			//chamando o método contendo a lógica de contagem
-			contar(num1, num2);
-		
+			contar(num1, num2);	
 		}catch (ParametroInvalidoException exception) {
 			//imprimir a mensagem: O segundo parâmetro deve ser maior que o primeiro
-			System.out.println("O segundo parâmetro deve ser maior que o primeiro");
+			System.out.println(exception.getMessage());
 		}
 		
 	}
